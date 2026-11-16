@@ -1,0 +1,39 @@
+{
+  "ExG": [
+    {"exg_threshold": -20, "min_component_area": 0},
+    {"exg_threshold": 0, "min_component_area": 0},
+    {"exg_threshold": 20, "min_component_area": 0},
+    {"exg_threshold": 40, "min_component_area": 0},
+    {"exg_threshold": 60, "min_component_area": 0},
+    {"exg_threshold": 80, "min_component_area": 0}
+  ],
+  "HSV": [
+    {"hue_min": 35, "hue_max": 120, "saturation_min": 0.1, "saturation_max": 1.0, "value_min": 0.05, "value_max": 1.0},
+    {"hue_min": 35, "hue_max": 120, "saturation_min": 0.1, "saturation_max": 1.0, "value_min": 0.15, "value_max": 1.0},
+    {"hue_min": 35, "hue_max": 120, "saturation_min": 0.2, "saturation_max": 1.0, "value_min": 0.05, "value_max": 1.0},
+    {"hue_min": 35, "hue_max": 120, "saturation_min": 0.2, "saturation_max": 1.0, "value_min": 0.15, "value_max": 1.0},
+    {"hue_min": 45, "hue_max": 135, "saturation_min": 0.1, "saturation_max": 1.0, "value_min": 0.05, "value_max": 1.0},
+    {"hue_min": 45, "hue_max": 135, "saturation_min": 0.1, "saturation_max": 1.0, "value_min": 0.15, "value_max": 1.0},
+    {"hue_min": 45, "hue_max": 135, "saturation_min": 0.2, "saturation_max": 1.0, "value_min": 0.05, "value_max": 1.0},
+    {"hue_min": 45, "hue_max": 135, "saturation_min": 0.2, "saturation_max": 1.0, "value_min": 0.15, "value_max": 1.0},
+    {"hue_min": 55, "hue_max": 145, "saturation_min": 0.1, "saturation_max": 1.0, "value_min": 0.05, "value_max": 1.0},
+    {"hue_min": 55, "hue_max": 145, "saturation_min": 0.1, "saturation_max": 1.0, "value_min": 0.15, "value_max": 1.0},
+    {"hue_min": 55, "hue_max": 145, "saturation_min": 0.2, "saturation_max": 1.0, "value_min": 0.05, "value_max": 1.0},
+    {"hue_min": 55, "hue_max": 145, "saturation_min": 0.2, "saturation_max": 1.0, "value_min": 0.15, "value_max": 1.0}
+  ],
+  "Otsu-ExG": [
+    {}
+  ],
+  "ExG-HSV Fusion": [
+    {"exg_threshold": 0, "min_component_area": 0, "hue_min": 35, "hue_max": 120, "saturation_min": 0.1, "saturation_max": 1.0, "value_min": 0.05, "value_max": 1.0},
+    {"exg_threshold": 0, "min_component_area": 0, "hue_min": 35, "hue_max": 120, "saturation_min": 0.2, "saturation_max": 1.0, "value_min": 0.15, "value_max": 1.0},
+    {"exg_threshold": 0, "min_component_area": 0, "hue_min": 45, "hue_max": 135, "saturation_min": 0.1, "saturation_max": 1.0, "value_min": 0.05, "value_max": 1.0},
+    {"exg_threshold": 0, "min_component_area": 0, "hue_min": 45, "hue_max": 135, "saturation_min": 0.2, "saturation_max": 1.0, "value_min": 0.15, "value_max": 1.0},
+    {"exg_threshold": 0, "min_component_area": 0, "hue_min": 55, "hue_max": 145, "saturation_min": 0.1, "saturation_max": 1.0, "value_min": 0.05, "value_max": 1.0},
+    {"exg_threshold": 0, "min_component_area": 0, "hue_min": 55, "hue_max": 145, "saturation_min": 0.2, "saturation_max": 1.0, "value_min": 0.15, "value_max": 1.0},
+    {"exg_threshold": 40, "min_component_area": 0, "hue_min": 35, "hue_max": 120, "saturation_min": 0.1, "saturation_max": 1.0, "value_min": 0.05, "value_max": 1.0},
+    {"exg_threshold": 40, "min_component_area": 0, "hue_min": 45, "hue_max": 135, "saturation_min": 0.2, "saturation_max": 1.0, "value_min": 0.15, "value_max": 1.0},
+    {"exg_threshold": 40, "min_component_area": 0, "hue_min": 55, "hue_max": 145, "saturation_min": 0.1, "saturation_max": 1.0, "value_min": 0.05, "value_max": 1.0},
+    {"exg_threshold": 40, "min_component_area": 0, "hue_min": 55, "hue_max": 145, "saturation_min": 0.2, "saturation_max": 1.0, "value_min": 0.15, "value_max": 1.0}
+  ]
+}

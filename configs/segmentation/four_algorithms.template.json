@@ -1,0 +1,25 @@
+{
+  "ExG": {
+    "exg_threshold": null,
+    "min_component_area": 0
+  },
+  "HSV": {
+    "hue_min": null,
+    "hue_max": null,
+    "saturation_min": null,
+    "saturation_max": null,
+    "value_min": null,
+    "value_max": null
+  },
+  "Otsu-ExG": {},
+  "ExG-HSV Fusion": {
+    "exg_threshold": null,
+    "min_component_area": 0,
+    "hue_min": null,
+    "hue_max": null,
+    "saturation_min": null,
+    "saturation_max": null,
+    "value_min": null,
+    "value_max": null
+  }
+}

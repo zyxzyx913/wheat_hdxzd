@@ -1,0 +1,77 @@
+/* 欧式古典油画主题：装饰为独立叠层，不影响路由、业务数据和交互。 */
+:root{background:#d6d5bd}
+body{background:#d6d5bd}
+.agtech-shell.oil-theme{position:relative;border:5px solid #345a46;outline:1px solid #b69b54;outline-offset:4px;border-radius:3px;padding-left:39px;padding-right:39px;background-color:#f0e7ce;background-image:linear-gradient(#f4eddce6,#f4eddce6),url('../assets/wheat-damask.svg');box-shadow:0 0 0 2px #d7bd77 inset,0 12px 50px #39452a1a}
+.oil-theme .agtech-header{border-bottom:4px double #b7a16a;padding-top:31px;position:relative}
+.oil-theme .agtech-header::after{content:"❦";position:absolute;bottom:-11px;left:50%;background:#f2e9d4;padding:0 13px;color:#a48943;font-size:18px;line-height:18px}
+.oil-theme .agtech-brand{gap:16px}
+.oil-theme .agtech-logo{width:49px;height:54px;border-radius:50% 50% 40% 40%;background:#345b47;border:3px double #d7bc71;outline:1px solid #bba15a;outline-offset:3px;color:#e2c77d;box-shadow:0 2px 6px #3f4d3024}
+.oil-theme .agtech-brand strong{font-family:"Noto Serif SC","Songti SC","SimSun",serif;font-size:31px;letter-spacing:5px;text-shadow:0 1px #fff7df}
+.oil-theme .agtech-brand small{font-size:8px;letter-spacing:1px;color:#8b7952}
+.oil-theme .page-search{border:3px double #c6b27d;background:#faf3e2;border-radius:0;height:48px;box-shadow:inset 0 1px 4px #7b69380a}
+.oil-theme .account-avatar{border:3px double #bda663;background:#e5dfc7}
+.oil-theme .navigation-bar{padding-top:23px;padding-bottom:25px}
+.oil-theme .pill-navigation{gap:9px}
+.oil-theme .pill-navigation a{border:1px solid #c5b58a;border-radius:1px;background:#faf3e044;box-shadow:inset 0 0 0 2px #f8f0dd;color:#7c704e;font-size:11px;padding:10px 14px}
+.oil-theme .pill-navigation a.selected{background:#345b47;border:3px double #c5aa60;color:#f5e3b3;box-shadow:inset 0 0 0 2px #345b47}
+.oil-theme .pill-navigation a:hover{border-color:#b79a4c;background:#e6dcc0;color:#35563b}
+.oil-theme .pill-navigation a.selected:hover{background:#3c644b;color:#fff0bd}
+.oil-theme .workspace-caption{color:#9e854a;letter-spacing:2px}
+.oil-theme .field-observation.botanical-hero{background-color:#eee3c9;background-image:linear-gradient(#f3ead4da,#f3ead4da),url('../assets/wheat-damask.svg');border:5px double #bca463;box-shadow:inset 0 0 0 5px #eee2c1,inset 0 0 30px #ba9f4b15,0 5px 15px #695e3b0b;border-radius:1px;padding:49px 37px 73px;min-height:670px;isolation:isolate}
+.ornamental-frame{position:absolute;inset:8px;pointer-events:none;z-index:3;color:#a98b40}
+.ornamental-frame svg{position:absolute;width:85px;height:85px}
+.ornament-tl{top:0;left:0}.ornament-tr{top:0;right:0;transform:scaleX(-1)}.ornament-bl{bottom:0;left:0;transform:scaleY(-1)}.ornament-br{bottom:0;right:0;transform:scale(-1)}
+.oil-theme .botanical-hero-copy{width:49%;padding-top:4px}
+.oil-theme .botanical-kicker{display:inline-block;letter-spacing:1px;font-size:8px;color:#9a7e3d;padding:7px 0;border-top:1px solid #bca86d;border-bottom:1px solid #bca86d}
+.oil-theme .botanical-hero h1{font-size:65px;letter-spacing:8px;margin-top:25px;color:#345d46;text-shadow:0 1px #fff5d4,1px 2px #b5a66d25}
+.oil-theme .botanical-hero h1>span{font-size:11px;letter-spacing:2px;color:#8e7746;line-height:1.9;margin-top:16px}
+.oil-theme .botanical-rule{height:auto;width:90px;background:none;border-top:3px double #b79a51;margin:25px 0;position:relative}
+.oil-theme .botanical-rule::after{content:"✦";position:absolute;top:-10px;left:38px;font-size:12px;color:#a78a43;background:#f2e8d1;padding:0 6px}
+.oil-theme .botanical-hero h2{font-size:28px;line-height:1.95;color:#5b6745;letter-spacing:2px}
+.oil-theme .botanical-hero-copy>p{font-size:11px;color:#8a7953;line-height:2.4;max-width:280px;margin-top:18px;margin-bottom:28px}
+.oil-theme .botanical-hero .field-button{border-radius:0;border:3px double #c9ad65;padding:10px 12px;font-size:9px}
+.oil-theme .botanical-hero .field-button.primary{background:#345b47;color:#f4e3b4;border-color:#bda15a}
+.oil-theme .botanical-hero .field-button.secondary{background:#f6edda;color:#84713e;border-color:#c5af75}
+.oil-theme .observation-actions{gap:10px}
+.oil-theme .botanical-disclosure{font-size:7px;color:#a18c54;line-height:1.9}
+.oil-painting{position:absolute;right:32px;top:68px;bottom:85px;width:43%;margin:0;display:flex;flex-direction:column;align-items:center;z-index:1}
+.oil-painting-moulding{position:relative;width:100%;flex:1;min-height:0;padding:10px;background:linear-gradient(130deg,#c7a861,#f2dfa1 20%,#8d743f 43%,#d2b16a 64%,#ac8a42);border:2px solid #9d7e3c;box-shadow:0 0 0 2px #e2ca8b,0 0 0 4px #9f8344,0 0 0 7px #c8ae6d,4px 8px 16px #5d4d292b,inset 0 0 0 3px #f1d992b5}
+.oil-painting-moulding::before{content:"";position:absolute;inset:5px;border:1px solid #8f753f;pointer-events:none}
+.oil-painting img{display:block;width:100%;height:100%;object-fit:cover;border:2px solid #897041;box-shadow:0 0 0 1px #e5cd8c}
+.oil-painting figcaption{position:relative;display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap;flex-shrink:0;text-align:center;font-family:"SimSun",serif;font-size:13px;letter-spacing:3px;color:#987a38;padding-top:19px;line-height:1.7}
+.painting-caption-rule{width:24px;height:1px;background:#b99f60}
+.oil-painting figcaption small{display:block;flex-basis:100%;font-family:"Microsoft YaHei",sans-serif;font-size:7px;letter-spacing:1px;color:#ac985e;margin-top:-4px}
+.oil-theme .botanical-hero-foot{left:30px;right:30px;border-top:3px double #bfa968;color:#9c8240;padding:17px 17px;bottom:3px;font-size:8px}
+.oil-theme .insight-card,.oil-theme .analysis-history,.oil-theme .model-reserve,.oil-theme .archive-showcase,.oil-theme .panel{border:4px double #c7b480;background-color:#f9f1df;background-image:linear-gradient(#fcf5e7f0,#fcf5e7f0),url('../assets/wheat-damask.svg');box-shadow:inset 0 0 0 3px #f9efda,0 3px 10px #73603b08;border-radius:1px}
+.oil-theme .insight-card>.dashboard-section-heading,.oil-theme .analysis-history>.dashboard-section-heading{border-bottom:3px double #d4c291;padding-bottom:16px;position:relative}
+.oil-theme .insight-card>.dashboard-section-heading::after,.oil-theme .analysis-history>.dashboard-section-heading::after{content:"❧";position:absolute;left:46%;bottom:-11px;background:#fbf3e3;color:#b49a50;font-size:21px;line-height:17px;padding:0 7px}
+.oil-theme .dashboard-section-heading h2,.oil-theme .section-heading h2{font-family:"Noto Serif SC","SimSun",serif;letter-spacing:1px;font-size:20px;color:#4e6244}
+.oil-theme .insight-icon{background:#e9dfc3;border:3px double #c5ac6d;color:#a5893d}
+.oil-theme .chart-empty-icon{background:#e9e0c6;border:3px double #c3ad71;color:#a88d47;box-shadow:0 0 0 6px #f9f1df}
+.oil-theme .observation-chart-empty h3,.oil-theme .observation-chart-empty p{background:#fbf3e3;color:#94825a}
+.oil-theme .period-tabs button{border:1px solid #d2be8b;border-radius:0;background:#f4e8cd;color:#9e8445}
+.oil-theme .period-tabs button.active{background:#405f44;color:#f3dfaa;border:3px double #c7a761;padding:7px 13px}
+.oil-theme .advice-pill{border:1px solid #cabc8b;box-shadow:inset 0 0 0 2px #ffffff26;border-radius:0;color:#817342}
+.oil-theme .advice-pill.pale{background:#eee1c0}.oil-theme .advice-pill.sage{background:#dce0bf}.oil-theme .advice-pill.green{background:#dfcb8b}
+.oil-theme .readiness-note{border:1px solid #d9c697;background:#eee4ca;border-radius:1px}
+.oil-theme .photo-tool{border:5px ridge #b99a52;box-shadow:0 0 0 1px #d0b979; border-radius:65px 65px 1px 1px}
+.oil-theme .photo-tool-name{border:1px solid #c5ae70;background:#3b5239dd;color:#f5e5b6;border-radius:0}
+.oil-theme .photo-tool-state{background:#ead8a2;color:#8c743e;border:1px solid #b6a16a}
+.oil-theme .archive-page .page-heading{border-bottom:5px double #baa66d}
+.oil-theme .archive-page h1{font-size:38px;letter-spacing:4px;text-shadow:0 1px #fff9df}
+.oil-theme .capability{border:3px double #d6c394;background:#fbf3e1;border-radius:0}
+.oil-theme .archive-showcase-title{border-bottom:3px double #ccb67c}
+.oil-theme .archive-showcase-title>svg{color:#b89c50}
+.oil-theme .archive-metrics article{border:3px double #c5b77e}
+.oil-theme .archive-metrics article:nth-child(2){border-color:#c7aa59}
+.oil-theme .archive-image-slot,.oil-theme .upload-placeholder{border:3px double #cdbc8e;background:#eee6d1}
+.oil-theme .archive-report{background:#ece3c9;border:3px double #c5b17c}
+.oil-theme .model-reserve-heading{border-bottom:3px double #d1bd87;background:#eae0c5}
+.oil-theme .model-box{color:#b09143}
+.oil-theme .agtech-footer{border-top:4px double #bfae7c;position:relative;color:#a18b53}
+.oil-theme .agtech-footer::before{content:"❦";position:absolute;top:-12px;left:50%;padding:0 14px;background:#f3ead4;color:#9a7f3e;font-size:21px}
+@media(min-width:1700px){.oil-theme .field-observation.botanical-hero{min-height:745px;padding:58px 43px 77px}.oil-theme .botanical-hero h1{font-size:82px}.oil-theme .botanical-hero h2{font-size:34px}.oil-theme .botanical-hero-copy>p{font-size:13px;max-width:310px}.oil-painting{right:42px;top:75px;bottom:90px;width:43%}.oil-theme .botanical-hero .field-button{font-size:11px;padding:12px 15px}}
+@media(max-width:1100px){.agtech-shell.oil-theme{padding-left:23px;padding-right:23px}.oil-theme .field-observation.botanical-hero{min-height:690px;padding:43px 25px 75px}.oil-theme .botanical-hero-copy{width:51%}.oil-theme .botanical-hero h1{font-size:51px;letter-spacing:5px}.oil-theme .botanical-hero h1>span{font-size:9px;letter-spacing:1px}.oil-theme .botanical-hero h2{font-size:24px}.oil-theme .botanical-hero-copy>p{font-size:10px}.oil-painting{right:22px;top:100px;bottom:110px;width:40%}.oil-theme .botanical-kicker{font-size:7px}.ornamental-frame svg{width:65px;height:65px}.oil-theme .botanical-hero .field-button{font-size:8px;padding:10px}.oil-theme .dashboard-section-heading h2{font-size:17px}}
+@media(max-width:850px){.oil-theme .botanical-hero-copy{width:49%}.oil-painting{top:65px;bottom:95px;width:42%;right:30px}.oil-theme .field-observation.botanical-hero{min-height:650px}.oil-theme .botanical-hero h1{font-size:63px}}
+@media(max-width:550px){.agtech-shell.oil-theme{padding-left:14px;padding-right:14px;border-width:3px;outline-offset:2px}.oil-theme .agtech-brand{gap:10px;min-width:0}.oil-theme .agtech-brand strong{font-size:24px;letter-spacing:3px}.oil-theme .agtech-logo{width:38px;height:43px}.oil-theme .agtech-brand small{font-size:7px;letter-spacing:0}.oil-theme .pill-navigation a{font-size:9px;padding:8px 10px}.oil-theme .field-observation.botanical-hero{display:flex;flex-direction:column;min-height:0;padding:36px 24px 65px}.oil-theme .botanical-hero-copy{width:100%}.oil-theme .botanical-hero h1{font-size:57px;margin-top:22px}.oil-theme .botanical-hero h2{font-size:24px;line-height:1.8}.oil-theme .botanical-hero-copy>p{max-width:none;font-size:11px}.oil-theme .botanical-hero h1>span{font-size:11px}.oil-theme .botanical-hero .field-button{font-size:10px;padding:10px}.oil-painting{position:relative;inset:auto;width:82%;height:340px;align-self:center;margin-top:32px;margin-bottom:12px}.ornamental-frame svg{width:55px;height:55px}.oil-theme .botanical-hero-foot{font-size:7px;left:16px;right:16px;padding:15px 5px}.oil-theme .botanical-hero-foot>span:last-child{font-size:6px}.oil-theme .archive-page h1{font-size:29px}.oil-theme .dashboard-section-heading h2{font-size:17px}}
+

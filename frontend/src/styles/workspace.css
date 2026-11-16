@@ -1,0 +1,49 @@
+/* 参考图的浅色工作台语言：保留所有导航地址，改变共享外观。 */
+:root { background: #f3f5ed; color: #193d2b; --green: #23804f; --dark: #174b34; }
+body { margin: 0; background: #f3f5ed; }
+.agtech-shell { max-width: 1840px; min-height: calc(100vh - 48px); margin: 24px auto; background: #f3f4f0; border: 1px solid #dce5dc; border-radius: 32px; padding: 0 34px; overflow: clip; }
+.agtech-header { display: flex; align-items: center; gap: 22px; padding: 28px 0 22px; }
+.agtech-brand { display: flex; align-items: center; gap: 11px; background: #fff; border-radius: 40px; padding: 10px 20px 10px 10px; flex-shrink: 0; min-width: 215px; }
+.agtech-logo { display: grid; place-items: center; width: 45px; height: 45px; border-radius: 50%; background: #3d9b58; color: #fff; }
+.agtech-brand strong { display: block; font-size: 22px; letter-spacing: 1px; font-weight: 500; color: #183b2b; }
+.agtech-brand small { display: block; font-size: 8px; color: #83917c; margin-top: 4px; }
+.page-search { position: relative; display: flex; align-items: center; gap: 11px; flex: 1; max-width: 570px; height: 65px; background: #fff; border-radius: 40px; padding: 0 23px; color: #1c3e2c; min-width: 0; }
+.page-search input { width: 100%; min-width: 0; font: inherit; border: 0; outline: none; background: none; font-size: 13px; color: #2d4736; }
+.page-search:focus-within { box-shadow: 0 0 0 2px #a3cbaa; }
+.page-search input::placeholder { color: #87937e; }
+.search-hint { font-size: 9px; color: #a1ab99; white-space: nowrap; }
+.search-results { position: absolute; top: calc(100% + 9px); left: 0; width: 100%; z-index: 45; padding: 10px; background: #fff; border: 1px solid #e3e9dd; border-radius: 18px; box-shadow: 0 12px 30px #193b2a16; }
+.search-results a { display: flex; align-items: center; gap: 10px; border-radius: 10px; padding: 12px; font-size: 12px; color: #5b7351; }
+.search-results a span { flex: 1; }
+.search-results a:hover { background: #eef5e9; }
+.search-results p { padding: 12px; color: #8d9a80; font-size: 12px; }
+.agtech-header-end { display: flex; align-items: center; gap: 27px; margin-left: auto; flex-shrink: 0; }
+.agtech-runtime { display: flex; gap: 6px; align-items: center; font-size: 10px; color: #819172; }
+.agtech-runtime i { width: 5px; height: 5px; border-radius: 50%; background: #58a772; }
+.account-menu { position: relative; }
+.account-menu summary { display: flex; align-items: center; gap: 10px; list-style: none; cursor: pointer; color: #6f8363; }
+.account-menu summary::-webkit-details-marker { display: none; }
+.account-avatar { display: grid; place-items: center; height: 48px; width: 48px; border-radius: 50%; background: #e3ebdd; color: #88a079; border: 3px solid #fff; }
+.account-name strong { display: block; font-size: 13px; font-weight: 500; color: #294731; }
+.account-name small { display: block; font-size: 10px; color: #89997b; margin-top: 6px; }
+.account-popover { position: absolute; top: calc(100% + 13px); right: 0; width: 208px; background: #fff; border: 1px solid #dfe8d8; border-radius: 16px; z-index: 40; padding: 20px; box-shadow: 0 10px 30px #193e2b16; }
+.account-popover strong { font-size: 13px; font-weight: 500; }
+.account-popover p { font-size: 10px; color: #8f9e80; margin-top: 8px; }
+.account-popover a { display: flex; align-items: center; gap: 8px; border-top: 1px solid #edf1e9; padding-top: 14px; margin-top: 14px; font-size: 12px; color: #5d7b4b; }
+.account-popover a svg:last-child { margin-left: auto; }
+.account-menu summary:focus-visible { outline: 2px solid #6ea274; outline-offset: 5px; border-radius: 40px; }
+.navigation-bar { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding-bottom: 23px; }
+.pill-navigation { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
+.pill-navigation a { display: flex; align-items: center; gap: 8px; min-height: 38px; padding: 10px 15px; border-radius: 30px; color: #7c8b71; font-size: 11px; transition: color .18s, background .18s; }
+.pill-navigation a:hover { background: #e6ecdf; color: #37693b; }
+.pill-navigation a.selected { background: #d4e8ca; color: #365d31; font-weight: 500; }
+.workspace-caption { font-size: 10px; color: #9ba58f; white-space: nowrap; }
+.agtech-main { min-height: 60vh; }
+.agtech-main:focus { outline: none; }
+.agtech-main > .page-container { max-width: none; padding: 15px 0 30px; }
+.agtech-footer { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 21px 0 22px; border-top: 1px solid #e2e8db; color: #9ba78c; font-size: 9px; line-height: 1.7; }
+@media (min-width: 1920px) { .agtech-shell { margin-top: 32px; margin-bottom: 32px; min-height: calc(100vh - 64px); padding: 0 40px; } .agtech-header { padding-top: 32px; } }
+@media (max-width: 1500px) { .agtech-shell { margin: 18px; padding: 0 27px; border-radius: 28px; } .agtech-runtime { display: none; } .agtech-header { gap: 18px; } .page-search { height: 59px; } }
+@media (max-width: 1150px) { .workspace-caption { display: none; } .pill-navigation a { padding: 9px 12px; font-size: 10px; } .agtech-brand { min-width: 190px; } .search-hint { display: none; } }
+@media (max-width: 760px) { .agtech-shell { margin: 8px; border-radius: 22px; padding: 0 16px; } .agtech-header { gap: 12px; padding-top: 19px; flex-wrap: wrap; padding-bottom: 17px; } .agtech-brand { min-width: 0; padding: 7px 14px 7px 7px; } .agtech-brand strong { font-size: 19px; } .agtech-brand small { font-size: 7px; } .agtech-logo { width: 36px; height: 36px; } .agtech-header-end { margin-left: auto; } .account-name { display: none; } .account-avatar { width: 39px; height: 39px; } .page-search { order: 3; flex-basis: 100%; max-width: none; height: 47px; padding: 0 16px; } .page-search input { font-size: 12px; } .navigation-bar { padding-bottom: 19px; } .pill-navigation { gap: 5px; } .pill-navigation a { font-size: 10px; padding: 9px 11px; min-height: 35px; gap: 6px; } .pill-navigation a svg { width: 14px; } .agtech-footer { font-size: 8px; flex-direction: column; align-items: flex-start; gap: 5px; } }
+

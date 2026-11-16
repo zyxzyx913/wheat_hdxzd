@@ -1,0 +1,14 @@
+/* 全站视觉统一：以图像识别工作台的深色农业驾驶舱为唯一基准。 */
+.dark-cockpit :is(.trend-page,.yield-page,.market-page,.reports-page,.growth-v1-page){color:#edf5e7;max-width:100%;}
+.dark-cockpit :is(.trend-page,.yield-page,.market-page,.reports-page,.growth-v1-page) :is(input,select,textarea){color-scheme:dark;background:#0b2419!important;color:#edf5e7!important;border-color:#75d66b42;}
+.dark-cockpit :is(.trend-page,.yield-page,.market-page,.reports-page,.growth-v1-page) :is(input,select,textarea):focus{border-color:#a5e58a;box-shadow:0 0 0 3px #75d66b20;outline:none;}
+.dark-cockpit :is(.trend-page,.yield-page,.market-page,.reports-page,.growth-v1-page) :is(button,.button){font-family:inherit;}
+.dark-cockpit :is(.market-panel,.reports-empty,.reports-error,.report-list,.report-detail,.growth-v1-panel,.trend-chart-card,.trend-kpi-card,.yield-summary-card,.yield-record-panel){border-color:#75d66b32;box-shadow:inset 0 1px #d8f0c312,0 8px 22px #020d0822;}
+.dark-cockpit :is(.market-heading,.reports-heading,.growth-v1-title,.module-title){min-height:64px;}
+.dark-cockpit :is(.market-heading h1,.reports-heading h1,.growth-v1-title h1,.module-title h1){color:#edf5e7;}
+.dark-cockpit :is(.market-heading p,.reports-heading p,.growth-v1-title p,.module-title p){color:#bfd2b8;}
+.dark-cockpit :is(.market-status,.reports-status,.status-pill,.module-status){background:#75d66b12;border-color:#75d66b42;color:#c1ddaf;}
+.dark-cockpit :is(.market-panel,.reports-empty,.reports-error,.report-list,.report-detail,.growth-v1-panel,.trend-chart-card,.trend-kpi-card,.yield-summary-card,.yield-record-panel){background:rgba(16,48,35,.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);}
+.dark-cockpit :is(.market-panel,.report-card,.growth-v1-panel,.trend-chart-card,.trend-kpi-card,.yield-summary-card,.yield-record-panel):hover{border-color:#a5e58a58;}
+.dark-cockpit :is(.market-page,.reports-page,.trend-page,.yield-page,.growth-v1-page){--accent:#a5e58a;--panel:#103023;}
+@media(max-width:760px){.dark-cockpit :is(.market-heading,.reports-heading,.growth-v1-title,.module-title){min-height:0;}}

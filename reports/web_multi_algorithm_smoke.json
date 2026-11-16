@@ -1,0 +1,180 @@
+{
+  "verification_type": "real EWS train image four-algorithm HTTP consistency check; NOT accuracy evaluation",
+  "checked_at_utc": "2026-11-13T19:15:51.960902+00:00",
+  "base_url": "http://127.0.0.1:8000",
+  "source_sample_id": "FPWW0220011_RGB1_20180316_100219_6",
+  "source_split": "train",
+  "dataset_name": "EWS",
+  "dataset_version": "2021-11-30",
+  "source_image": "D:\\Desktop\\wheat\\source-code\\wheat-phenotyping\\data\\raw\\ews\\train\\images\\FPWW0220011_RGB1_20180316_100219_6.png",
+  "input_sha256": "869585b49dca3374431ed099289741b5ea0471cabbde48d687395e0854f0d96b",
+  "same_canonical_rgb": true,
+  "results": [
+    {
+      "task_id": "995ba2a7262d4837bcd3bf15b0d9d023",
+      "status": "succeeded",
+      "algorithm": "ExG",
+      "input_sha256": "869585b49dca3374431ed099289741b5ea0471cabbde48d687395e0854f0d96b",
+      "original_url": "/media/995ba2a7262d4837bcd3bf15b0d9d023/original.png",
+      "mask_url": "/media/995ba2a7262d4837bcd3bf15b0d9d023/mask.png",
+      "overlay_url": "/media/995ba2a7262d4837bcd3bf15b0d9d023/overlay.png",
+      "width": 350,
+      "height": 350,
+      "vegetation_pixel_count": 34376,
+      "total_valid_pixels": 122500,
+      "vegetation_ratio": 0.28062040816326533,
+      "analysis_time_seconds": 0.11095029953867197,
+      "segmentation_time_seconds": 0.028244399465620518,
+      "parameters": {
+        "exg_threshold": 20,
+        "min_component_area": 0
+      },
+      "algorithm_metadata": {
+        "algorithm": "ExG",
+        "parameters": {
+          "exg_threshold": 20,
+          "min_component_area": 0
+        }
+      },
+      "profile_id": "ews-validation-exg-efb980c08be1",
+      "created_at_utc": "2026-11-13T19:15:50.889417+00:00",
+      "warnings": [
+        "仅分析画面可见植被区域，不识别叶、茎、穗，不提供农学长势诊断或预测。"
+      ],
+      "http_status": 200,
+      "mask_count_verified": true,
+      "direct_predictor_mask_equal": true,
+      "all_assets_decodable": true,
+      "artifact_directory": "D:\\Desktop\\wheat\\source-code\\wheat-phenotyping\\var\\web\\analyses\\995ba2a7262d4837bcd3bf15b0d9d023"
+    },
+    {
+      "task_id": "bfed3e8c73f74ce38082c2be333b6ac2",
+      "status": "succeeded",
+      "algorithm": "HSV",
+      "input_sha256": "869585b49dca3374431ed099289741b5ea0471cabbde48d687395e0854f0d96b",
+      "original_url": "/media/bfed3e8c73f74ce38082c2be333b6ac2/original.png",
+      "mask_url": "/media/bfed3e8c73f74ce38082c2be333b6ac2/mask.png",
+      "overlay_url": "/media/bfed3e8c73f74ce38082c2be333b6ac2/overlay.png",
+      "width": 350,
+      "height": 350,
+      "vegetation_pixel_count": 33140,
+      "total_valid_pixels": 122500,
+      "vegetation_ratio": 0.27053061224489794,
+      "analysis_time_seconds": 0.17458369955420494,
+      "segmentation_time_seconds": 0.10231909994035959,
+      "parameters": {
+        "hue_min": 55,
+        "hue_max": 145,
+        "saturation_min": 0.1,
+        "saturation_max": 1.0,
+        "value_min": 0.15,
+        "value_max": 1.0
+      },
+      "algorithm_metadata": {
+        "algorithm": "HSV",
+        "parameters": {
+          "hue_min": 55,
+          "hue_max": 145,
+          "saturation_min": 0.1,
+          "saturation_max": 1.0,
+          "value_min": 0.15,
+          "value_max": 1.0
+        }
+      },
+      "profile_id": "ews-validation-hsv-efb980c08be1",
+      "created_at_utc": "2026-11-13T19:15:51.073153+00:00",
+      "warnings": [
+        "仅分析画面可见植被区域，不识别叶、茎、穗，不提供农学长势诊断或预测。"
+      ],
+      "http_status": 200,
+      "mask_count_verified": true,
+      "direct_predictor_mask_equal": true,
+      "all_assets_decodable": true,
+      "artifact_directory": "D:\\Desktop\\wheat\\source-code\\wheat-phenotyping\\var\\web\\analyses\\bfed3e8c73f74ce38082c2be333b6ac2"
+    },
+    {
+      "task_id": "a522d5d139c2436ca3108979c9686a00",
+      "status": "succeeded",
+      "algorithm": "Otsu-ExG",
+      "input_sha256": "869585b49dca3374431ed099289741b5ea0471cabbde48d687395e0854f0d96b",
+      "original_url": "/media/a522d5d139c2436ca3108979c9686a00/original.png",
+      "mask_url": "/media/a522d5d139c2436ca3108979c9686a00/mask.png",
+      "overlay_url": "/media/a522d5d139c2436ca3108979c9686a00/overlay.png",
+      "width": 350,
+      "height": 350,
+      "vegetation_pixel_count": 26576,
+      "total_valid_pixels": 122500,
+      "vegetation_ratio": 0.21694693877551022,
+      "analysis_time_seconds": 0.11434129998087883,
+      "segmentation_time_seconds": 0.05042020045220852,
+      "parameters": {},
+      "algorithm_metadata": {
+        "algorithm": "Otsu-ExG",
+        "parameters": {},
+        "computed_exg_threshold": 29,
+        "threshold_method": "otsu"
+      },
+      "profile_id": "ews-validation-otsu-exg-efb980c08be1",
+      "created_at_utc": "2026-11-13T19:15:51.381042+00:00",
+      "warnings": [
+        "仅分析画面可见植被区域，不识别叶、茎、穗，不提供农学长势诊断或预测。"
+      ],
+      "http_status": 200,
+      "mask_count_verified": true,
+      "direct_predictor_mask_equal": true,
+      "all_assets_decodable": true,
+      "artifact_directory": "D:\\Desktop\\wheat\\source-code\\wheat-phenotyping\\var\\web\\analyses\\a522d5d139c2436ca3108979c9686a00"
+    },
+    {
+      "task_id": "2633a96e14a64df49f7837de7b49d780",
+      "status": "succeeded",
+      "algorithm": "ExG-HSV Fusion",
+      "input_sha256": "869585b49dca3374431ed099289741b5ea0471cabbde48d687395e0854f0d96b",
+      "original_url": "/media/2633a96e14a64df49f7837de7b49d780/original.png",
+      "mask_url": "/media/2633a96e14a64df49f7837de7b49d780/mask.png",
+      "overlay_url": "/media/2633a96e14a64df49f7837de7b49d780/overlay.png",
+      "width": 350,
+      "height": 350,
+      "vegetation_pixel_count": 33140,
+      "total_valid_pixels": 122500,
+      "vegetation_ratio": 0.27053061224489794,
+      "analysis_time_seconds": 0.21149390004575253,
+      "segmentation_time_seconds": 0.14097849931567907,
+      "parameters": {
+        "exg_threshold": 0,
+        "min_component_area": 0,
+        "hue_min": 55,
+        "hue_max": 145,
+        "saturation_min": 0.1,
+        "saturation_max": 1.0,
+        "value_min": 0.05,
+        "value_max": 1.0
+      },
+      "algorithm_metadata": {
+        "algorithm": "ExG-HSV Fusion",
+        "parameters": {
+          "exg_threshold": 0,
+          "min_component_area": 0,
+          "hue_min": 55,
+          "hue_max": 145,
+          "saturation_min": 0.1,
+          "saturation_max": 1.0,
+          "value_min": 0.05,
+          "value_max": 1.0
+        },
+        "fusion_rule": "ExG threshold AND HSV range"
+      },
+      "profile_id": "ews-validation-exg-hsv-fusion-efb980c08be1",
+      "created_at_utc": "2026-11-13T19:15:51.578593+00:00",
+      "warnings": [
+        "仅分析画面可见植被区域，不识别叶、茎、穗，不提供农学长势诊断或预测。"
+      ],
+      "http_status": 200,
+      "mask_count_verified": true,
+      "direct_predictor_mask_equal": true,
+      "all_assets_decodable": true,
+      "artifact_directory": "D:\\Desktop\\wheat\\source-code\\wheat-phenotyping\\var\\web\\analyses\\2633a96e14a64df49f7837de7b49d780"
+    }
+  ],
+  "warning": "未使用人工标注计算精度；面积比例差异不是算法准确率；未修改 EWS 成绩。"
+}

@@ -1,0 +1,93 @@
+/* 深色农业驾驶舱；只覆盖视觉，不改变业务接口与品牌图片动效。 */
+:root { background:#071b14;color:#f2f7ef;--green:#75d66b;--dark:#071b14;--glass-panel:#103023;--glass-header:#0e281d;--glass-nav:#0c291c; }
+body { background:radial-gradient(ellipse at 75% 0,#174a2d55,transparent 45%),linear-gradient(135deg,#071b14,#0b241a);color:#f2f7ef; }
+body::before { background:radial-gradient(ellipse,#3e9e4b18,transparent 70%);opacity:.8; }
+body::after { background:radial-gradient(ellipse,#81b34b0d,transparent 70%); }
+.agtech-shell.dark-cockpit { margin:0 0 0 235px;max-width:none;min-height:100vh;background:transparent;border:0;border-radius:0;box-shadow:none;padding:0 28px;overflow:visible; }
+.dark-cockpit .agtech-header { margin:0 -28px 24px;padding:21px 28px!important;min-height:91px;border:0;border-bottom:1px solid #8ccf7830;border-radius:0;background:#0b241bf2;box-shadow:none;gap:24px; }
+.dark-cockpit .agtech-brand { position:fixed;left:21px;top:25px;z-index:55;width:193px;min-width:0;padding:0;background:none;border:0;border-radius:0;box-shadow:none; }
+.dark-cockpit .agtech-logo { width:39px;height:43px;border:1px solid #75d66b55;border-radius:11px;background:#75d66b12;color:#a5e58a;box-shadow:none; }
+.dark-cockpit .agtech-brand strong { color:#f2f7ef;font-size:23px; }
+.dark-cockpit .agtech-brand small { color:#89a38c;font-size:8px; }
+.dark-cockpit .navigation-bar { position:fixed;inset:0 auto 0 0;z-index:50;width:235px;padding:111px 17px 24px;margin:0;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:20px;background:#092319f7;border:0;border-right:1px solid #8ccf7826;backdrop-filter:blur(14px); }
+.dark-cockpit .pill-navigation { display:flex;flex-direction:column;align-items:stretch;background:none;border:0;border-radius:0;padding:0;box-shadow:none;gap:10px;backdrop-filter:none; }
+.dark-cockpit .pill-navigation a { min-height:46px;gap:13px;padding:13px 16px;border-radius:8px;color:#9fb7a4;font-size:13px;border:1px solid transparent; }
+.dark-cockpit .pill-navigation a:hover { background:#75d66b0d;color:#d8f5d1; }
+.dark-cockpit .pill-navigation a.selected { color:#b8f5a5;background:#75d66b21;border-color:#75d66b45;box-shadow:inset 3px 0 #75d66b; }
+.dark-cockpit .workspace-caption { margin-top:auto;padding:20px 9px 0;border-top:1px solid #75d66b20;color:#77967d;font-size:10px; }
+.cockpit-system-title { color:#e4efdf;font-size:13px;white-space:nowrap; }
+.cockpit-system-title small { display:block;color:#789981;font-size:10px;margin-top:7px; }
+.dark-cockpit .page-search { height:43px;max-width:400px;border-radius:8px;background:#17382a9c;border:1px solid #75d66b26; }
+.dark-cockpit .page-search input { color:#e9f5e4;font-size:12px; }
+.dark-cockpit .page-search input::placeholder,.dark-cockpit .search-hint { color:#86a68a; }
+.dark-cockpit .page-search>svg { color:#9bb59b; }
+.dark-cockpit .account-name strong { color:#dfe9da; }
+.dark-cockpit .account-name small { color:#8ba78b; }
+.dark-cockpit .account-avatar { background:#244c32;border:1px solid #75d66b36;color:#b3d7a2; }
+.dark-cockpit .agtech-header-end { gap:15px; }
+.dark-cockpit .agtech-runtime { display:flex;color:#99b99a;font-size:9px; }
+.dark-cockpit .agtech-runtime i { background:#75d66b; }
+.dark-cockpit .search-results,.dark-cockpit .account-popover { background:#102e21f7;border:1px solid #75d66b40;box-shadow:0 15px 40px #0005; }
+.dark-cockpit .search-results a,.dark-cockpit .account-popover a { color:#b8d5ad; }
+.dark-cockpit .search-results a:hover { background:#75d66b14; }
+.dark-cockpit .account-popover strong { color:#e9f2e3; }
+.dark-cockpit .account-popover p { color:#a2b99b; }
+.dark-cockpit .agtech-main { min-height:calc(100vh - 160px); }
+.dark-cockpit .agtech-footer { color:#6f9277;border-color:#75d66b20;padding:20px 0;font-size:9px; }
+.dark-cockpit :is(.insight-card,.analysis-history,.wb-panel,.panel,.capability,.archive-showcase,.model-reserve) { background:#103023e8;border:1px solid #75d66b2b;box-shadow:inset 0 1px 0 #b8eaa408,0 8px 20px #00000012;backdrop-filter:blur(10px);border-radius:12px; }
+.dark-cockpit :is(.insight-card,.wb-panel,.capability):hover { border-color:#75d66b59;box-shadow:0 8px 25px #0002,inset 0 1px 0 #a5e58a12; }
+.dark-cockpit :is(h1,h2,h3,.workbench-heading h1,.wb-panel h2,.wb-panel-heading h2,.dashboard-section-heading h2,.readiness-row h3,.model-reserve-stage h2) { color:#e3efdc; }
+.dark-cockpit :is(p,small,.metric-wait,.side-metric>span,.workbench-breadcrumb,.workbench-heading p,.wb-result-note>p,.history-empty p,.advice-intro,.period-caption,.readiness-row p,.readiness-note p,.advice-footnote,.dashboard-section-heading>span,.dashboard-section-heading p,.visual-empty small,.condition-field>span,.condition-field>div,.side-metric small,.metric-tile small,.connection-status small,.archive-image-slot p) { color:#9fb7a4; }
+.dark-cockpit :is(.visual-empty strong,.wb-result-note>strong,.history-empty h3,.metric-tile>span,.yield-main-card>span:first-child) { color:#bfd4b9; }
+.dark-cockpit :is(.visual-empty,.workbench-upload,.condition-field>div,.comparison-metrics>div,.report-table-heading,.readiness-note) { background:#09271b80;border-color:#75d66b29; }
+.dark-cockpit :is(.visual-empty-icon,.insight-icon,.chart-empty-icon,.history-empty-icon) { color:#87c77a;background:#75d66b10; }
+.dark-cockpit :is(.side-metric strong,.metric-tile strong,.yield-main-card strong,.comparison-metrics strong) { color:#a5e58a; }
+.dark-cockpit :is(.chart-scaffold i,.empty-grid span,.side-metric,.readiness-row+.readiness-row,.wb-control-note,.report-table-heading) { border-color:#75d66b1c; }
+.dark-cockpit .empty-ring { border-color:#75d66b1a;outline-color:#75d66b29;color:#8bb679; }
+.dark-cockpit :is(.wb-button,.wb-button.primary) { background:#75d66b16;border-color:#75d66b3d;color:#b2cf9d; }
+.dark-cockpit .wb-button:disabled { opacity:.6; }
+.dark-cockpit :is(.workbench-status,.readiness-label.pending,.archive-status) { background:#75d66b0f;color:#8caf89; }
+.dark-cockpit :is(.workbench-status.developing,.readiness-label.developing) { background:#d8b65c14;color:#d8b65c; }
+.dark-cockpit .readiness-label.complete { background:#75d66b16;color:#a5e58a; }
+.dark-cockpit :is(.wb-related,.dashboard-link,.history-action,.dashboard-research a,.workbench-more-links a) { color:#a5e58a; }
+.dark-cockpit .history-action { background:#75d66b12; }
+.dark-cockpit .period-tabs button { background:#75d66b0c;color:#a7c3a0; }
+.dark-cockpit .period-tabs button.active { background:#75d66b29;color:#b8f5a5;box-shadow:none; }
+.dark-cockpit .advice-pill { background:#75d66b13;color:#b9d9aa;border:1px solid #75d66b20; }
+.dark-cockpit .advice-pill.green { background:#75d66b27; }
+.dark-cockpit .model-reserve-heading { border-color:#75d66b26; }
+.dark-cockpit .field-dashboard { gap:20px;grid-template-columns:minmax(0,1.7fr) minmax(285px,1fr); }
+.cockpit-welcome { grid-column:1/-1;display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:3px; }
+.cockpit-welcome>div>span { font-size:10px;color:#79a583; }
+.cockpit-welcome h2 { font-size:23px;font-weight:500;margin:8px 0; }
+.cockpit-welcome p { font-size:11px; }
+.cockpit-date { text-align:right; }
+.cockpit-date>span { display:block;font-size:11px!important;color:#b7cdb0!important; }
+.cockpit-date small { display:block;font-size:9px;margin-top:9px; }
+.cockpit-shortcuts { grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin-bottom:3px; }
+.cockpit-shortcuts a { display:flex;align-items:center;gap:13px;background:#103023bf;border:1px solid #75d66b2d;border-radius:10px;padding:20px 19px;transition:transform .18s,border-color .18s; }
+.cockpit-shortcuts a:hover { transform:translateY(-3px);border-color:#75d66b70; }
+.cockpit-shortcuts a>span { display:grid;place-items:center;width:40px;height:40px;border-radius:9px;background:#75d66b12;color:#a5e58a; }
+.cockpit-shortcuts strong { font-size:13px;font-weight:500;color:#d8ead0; }
+.cockpit-shortcuts small { display:block;font-size:9px;margin-top:8px;color:#89a98c; }
+.cockpit-shortcuts a>svg { margin-left:auto;color:#75d66b; }
+.dark-cockpit .cockpit-market { display:flex;align-items:center;gap:13px; }
+.cockpit-market>svg { color:#d8b65c; }
+.cockpit-market h2 { font-size:14px; }
+.cockpit-market p { font-size:10px;margin-top:8px; }
+.cockpit-market>svg:last-child { margin-left:auto;color:#a5e58a; }
+.cockpit-stage>p { font-size:10px;margin-top:16px; }
+.stage-points { display:flex;justify-content:space-between;border-top:1px dashed #75d66b29;margin:32px 8px 0; }
+.stage-points i { width:9px;height:9px;border:1px solid #75d66b45;border-radius:50%;background:#103023;transform:translateY(-5px); }
+@media(max-width:1400px) { .dark-cockpit .agtech-runtime{display:none}.cockpit-system-title{font-size:11px}.dark-cockpit .agtech-header{gap:17px}.dark-cockpit .account-name{display:none}.dark-cockpit .workbench-layout{grid-template-columns:170px minmax(0,1fr) 180px;gap:12px}.dark-cockpit .field-dashboard{grid-template-columns:minmax(0,1.6fr) minmax(280px,1fr)} }
+@media(max-width:1100px) { .agtech-shell.dark-cockpit{margin-left:195px;padding:0 20px}.dark-cockpit .navigation-bar{width:195px;padding-left:12px;padding-right:12px}.dark-cockpit .agtech-brand{left:19px;width:170px}.dark-cockpit .agtech-header{margin:0 -20px 20px;padding:18px 20px!important}.cockpit-system-title{display:none}.dark-cockpit .workbench-layout{grid-template-columns:165px minmax(0,1fr)}.dark-cockpit .workbench-state{grid-column:1/-1}.cockpit-shortcuts{grid-template-columns:repeat(2,minmax(0,1fr))}.dark-cockpit .field-dashboard{grid-template-columns:1fr}.dark-cockpit .dashboard-insights{display:grid;grid-template-columns:1fr 1fr} }
+@media(max-width:760px) { .agtech-shell.dark-cockpit{margin:0;padding:0 14px}.dark-cockpit .agtech-header{margin:0 -14px 15px;padding:15px 14px!important;flex-wrap:wrap}.dark-cockpit .agtech-brand{position:static;width:auto}.dark-cockpit .navigation-bar{position:static;inset:auto;width:auto;padding:6px;margin:0 0 20px;background:#103023;border:1px solid #75d66b29;border-radius:10px;backdrop-filter:none}.dark-cockpit .pill-navigation{flex-direction:row;flex-wrap:wrap;gap:4px}.dark-cockpit .pill-navigation a{min-height:35px;padding:9px;font-size:10px;gap:6px}.dark-cockpit .workspace-caption{display:none}.dark-cockpit .workbench-layout{grid-template-columns:1fr}.dark-cockpit .workbench-state{grid-column:auto}.dark-cockpit .dashboard-insights{display:flex}.cockpit-date{display:none}.cockpit-welcome h2{font-size:21px}.cockpit-shortcuts{gap:10px}.cockpit-shortcuts a{padding:15px 12px;gap:8px}.cockpit-shortcuts strong{font-size:11px}.cockpit-shortcuts a>span{width:31px;height:34px}.dark-cockpit :is(.insight-card,.wb-panel){backdrop-filter:blur(5px);background:#103023f2} }
+@supports not (backdrop-filter:blur(1px)) { .dark-cockpit :is(.insight-card,.analysis-history,.wb-panel,.panel,.capability,.archive-showcase,.model-reserve){background:#103023} }
+
+/* 清除旧浅色空状态底色；Logo 独立于模糊顶部栏以避免 fixed 定位受滤镜影响。 */
+.dark-cockpit .observation-chart-empty :is(h3,p){background:#103023;color:#b7cdb0}
+.dark-cockpit .chart-empty-icon{box-shadow:0 0 0 10px #103023;background:#75d66b13;color:#a5e58a}
+.dark-cockpit .model-floor{opacity:.12}
+@media(max-width:760px){.dark-cockpit>.agtech-brand{display:flex;margin:16px 0 10px}.dark-cockpit .agtech-header{margin-top:0}.dark-cockpit .page-search{order:0;flex-basis:auto}}
+.dark-cockpit .advice-pill.pale,.dark-cockpit .advice-pill.sage{background:#75d66b13;color:#c2dcba;border:1px solid #75d66b26}
+.dark-cockpit .advice-pill.green{background:#75d66b24;color:#d2eac7}

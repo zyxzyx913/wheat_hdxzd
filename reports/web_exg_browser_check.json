@@ -1,0 +1,49 @@
+{
+  "alerts": [],
+  "analysisTime": "0.120 秒",
+  "horizontalOverflow": false,
+  "images": [
+    {
+      "alt": "原始图片",
+      "frameHeight": 245,
+      "loaded": true,
+      "naturalHeight": 350,
+      "naturalWidth": 350,
+      "renderedHeight": 245,
+      "src": "/media/c07c109abe9c4b778eb101aa8dd9a40c/original.png"
+    },
+    {
+      "alt": "分割掩膜",
+      "frameHeight": 190,
+      "loaded": true,
+      "naturalHeight": 350,
+      "naturalWidth": 350,
+      "renderedHeight": 190,
+      "src": "/media/c07c109abe9c4b778eb101aa8dd9a40c/mask.png"
+    },
+    {
+      "alt": "叠加结果",
+      "frameHeight": 190,
+      "loaded": true,
+      "naturalHeight": 350,
+      "naturalWidth": 350,
+      "renderedHeight": 190,
+      "src": "/media/c07c109abe9c4b778eb101aa8dd9a40c/overlay.png"
+    }
+  ],
+  "url": "http://127.0.0.1:5173/#/image-recognition",
+  "vegetationRatio": "28.06%",
+  "viewport": [
+    1280,
+    720
+  ],
+  "verifiedFlows": [
+    "选择真实 EWS train 图片与本地预览",
+    "网页实际提交 ExG 分析",
+    "原图/掩膜/叠加图均已加载",
+    "重新选择图片清空旧结果",
+    "后端停止后显示错误且不显示成功结果",
+    "后端恢复后重试分析成功"
+  ],
+  "scope": "接口与界面联调，不是模型精度实验"
+}

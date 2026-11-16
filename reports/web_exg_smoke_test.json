@@ -1,0 +1,55 @@
+{
+  "verification_type": "real EWS train image HTTP smoke test; NOT model accuracy evaluation",
+  "source_sample_id": "FPWW0220011_RGB1_20180316_100219_6",
+  "source_split": "train",
+  "dataset_name": "EWS",
+  "dataset_version": "2021-11-30",
+  "source_image": "D:\\Desktop\\wheat\\source-code\\wheat-phenotyping\\data\\raw\\ews\\train\\images\\FPWW0220011_RGB1_20180316_100219_6.png",
+  "input_sha256": "869585b49dca3374431ed099289741b5ea0471cabbde48d687395e0854f0d96b",
+  "base_url": "http://127.0.0.1:8000",
+  "health_status": 200,
+  "analyze_status": 200,
+  "result": {
+    "task_id": "f4b74e7a72e94e299253eb0ec809c3dd",
+    "status": "succeeded",
+    "algorithm": "ExG",
+    "original_url": "/media/f4b74e7a72e94e299253eb0ec809c3dd/original.png",
+    "mask_url": "/media/f4b74e7a72e94e299253eb0ec809c3dd/mask.png",
+    "overlay_url": "/media/f4b74e7a72e94e299253eb0ec809c3dd/overlay.png",
+    "width": 350,
+    "height": 350,
+    "vegetation_pixel_count": 34376,
+    "total_valid_pixels": 122500,
+    "vegetation_ratio": 0.28062040816326533,
+    "analysis_time_seconds": 0.06725959945470095,
+    "segmentation_time_seconds": 0.013667900115251541,
+    "parameters": {
+      "exg_threshold": 20,
+      "min_component_area": 0
+    },
+    "profile_id": "ews-validation-exg-efb980c08be1",
+    "created_at_utc": "2026-11-13T18:47:55.711266+00:00",
+    "warnings": [
+      "仅分析画面可见植被区域，不识别叶、茎、穗，不提供农学长势诊断或预测。"
+    ]
+  },
+  "asset_dimensions": {
+    "original_url": [
+      350,
+      350
+    ],
+    "mask_url": [
+      350,
+      350
+    ],
+    "overlay_url": [
+      350,
+      350
+    ]
+  },
+  "mask_pixel_count_verified": 34376,
+  "direct_exg_mask_equal": true,
+  "uploaded_bytes_unchanged": true,
+  "artifact_directory": "D:\\Desktop\\wheat\\source-code\\wheat-phenotyping\\var\\web\\analyses\\f4b74e7a72e94e299253eb0ec809c3dd",
+  "warning": "只验证接口、文件与计算一致性；未使用人工标注评价，未更新 EWS 实验成绩。"
+}

@@ -1,0 +1,127 @@
+/* 独立玻璃主题：默认不透明回退，支持背景滤镜时再开启半透明表面。 */
+:root {
+  --glass-panel: #f8fcf7;
+  --glass-header: #f4faf1;
+  --glass-nav: #174b34;
+  --glass-border: rgba(255,255,255,.84);
+  --glass-shadow: 0 8px 26px rgba(19,73,44,.065), inset 0 1px 0 rgba(255,255,255,.9);
+  background: #e8f2e5;
+  color: #19472f;
+}
+body {
+  background: radial-gradient(ellipse at 10% 12%, #b4d9a9a6, transparent 42%),
+    radial-gradient(ellipse at 88% 60%, #c9e3ac9c, transparent 45%),
+    linear-gradient(135deg,#e6f2e5 0%,#f8f9f1 52%,#e6efdb 100%);
+  isolation: isolate;
+}
+body::before,body::after {
+  content:"";position:fixed;pointer-events:none;z-index:-1;
+  width:60vw;height:65vh;border-radius:50%;
+  background:radial-gradient(ellipse,rgba(73,161,91,.17),rgba(106,174,103,.06) 40%,transparent 70%);
+  animation:glass-light-drift 28s ease-in-out infinite alternate;
+}
+body::before { top:-18vh;left:-12vw; }
+body::after { bottom:-20vh;right:-15vw;animation-delay:-13s;opacity:.75; }
+.agtech-shell.reference-theme {
+  background:rgba(245,250,241,.78);border:1px solid rgba(255,255,255,.8);
+  box-shadow:0 22px 65px rgba(22,70,41,.075),inset 0 1px 0 #ffffffd9;
+}
+.reference-theme .agtech-header {
+  position:relative;isolation:isolate;margin:16px -13px 18px;
+  padding:16px 13px!important;border-radius:22px;
+  background:var(--glass-header);border:1px solid var(--glass-border);
+  box-shadow:var(--glass-shadow);gap:20px;
+}
+.reference-theme .agtech-brand { background:rgba(255,255,255,.56);border:1px solid rgba(255,255,255,.65);box-shadow:inset 0 1px 0 white; }
+.reference-theme .agtech-logo { background:#308954;box-shadow:0 3px 12px #185c3421,inset 0 1px 0 #ffffff42; }
+.reference-theme .agtech-brand strong { color:#174b31; }
+.reference-theme .page-search { background:rgba(255,255,255,.62);border:1px solid #ffffffa3; }
+.reference-theme .page-search input { color:#285638; }
+.reference-theme .page-search input::placeholder { color:#6d8268; }
+.reference-theme .agtech-header-end { gap:20px; }
+.reference-theme .account-avatar { color:#3e794c;background:#e6f1df;border-color:#ffffffc7; }
+.reference-theme .account-name strong { color:#2c5639; }
+.reference-theme .account-name small { color:#6d8463; }
+.reference-theme .search-results,.reference-theme .account-popover { background:#f7fcf3;border-color:#ffffffdf;box-shadow:0 15px 35px #173f3221; }
+.reference-theme .pill-navigation {
+  background:var(--glass-nav);border:1px solid rgba(229,255,227,.28);border-radius:26px;
+  padding:6px;gap:5px;box-shadow:0 7px 20px #163e2a13,inset 0 1px 0 #e6ffe526;
+}
+.reference-theme .pill-navigation a { color:#dcebd3;transition:background .18s,color .18s,box-shadow .18s; }
+.reference-theme .pill-navigation a:hover { background:#e0f8ce1f;color:#fff; }
+.reference-theme .pill-navigation a.selected { background:#e0f0d5f2;color:#214a2c;box-shadow:inset 0 1px 0 #ffffffd9,0 3px 9px #0a321b21; }
+.reference-theme .workspace-caption { color:#627f55; }
+.reference-theme .navigation-bar { border-color:#d6e5cf; }
+.reference-theme :is(.insight-card,.analysis-history,.wb-panel,.panel,.capability,.archive-showcase,.model-reserve) {
+  background:var(--glass-panel);border:1px solid var(--glass-border);
+  box-shadow:var(--glass-shadow);
+}
+.reference-theme :is(.insight-card,.analysis-history,.wb-panel,.capability,.model-reserve) {
+  transition:box-shadow .2s,border-color .2s;
+}
+.reference-theme :is(.insight-card,.wb-panel,.capability):hover {
+  border-color:rgba(105,160,90,.48);
+  box-shadow:0 11px 29px rgba(25,78,40,.085),inset 0 1px 0 #ffffffeb;
+}
+.reference-theme :is(.photo-tool,.brand-entry) { box-shadow:0 5px 18px #173f3210; }
+.reference-theme :is(.photo-tool,.brand-entry):hover { transform:translateY(-4px);box-shadow:0 10px 25px #1e66321c;outline:1px solid #b0d59a; }
+.reference-theme .photo-tool-name { background:#234e3266;border-color:#ffffff61; }
+.reference-theme .field-observation.animated-field { border:1px solid #ecf7db7d;box-shadow:0 12px 35px #184a3017,inset 0 1px 0 #ffffff52; }
+.reference-theme .field-grain { background:radial-gradient(ellipse at 12% 12%,#e1f1a321,transparent 60%); }
+.reference-theme .field-label { background:#315b3659;border-color:#f1f8dc9c; }
+.reference-theme .photo-tool-state { background:#e6f5d9e8;color:#376138; }
+.reference-theme .period-tabs button { color:#627e50;background:#eef5e8d9; }
+.reference-theme .period-tabs button.active { background:#bcdc9f;color:#315e32;box-shadow:inset 0 1px 0 #ffffffbd; }
+.reference-theme :is(.workbench-upload,.visual-empty,.condition-field>div,.comparison-metrics>div) { background:rgba(240,247,232,.67); }
+.reference-theme :is(.visual-empty strong,.visual-empty-icon,.empty-ring) { color:#50713f; }
+.reference-theme :is(.visual-empty small,.condition-field>div,.side-metric small,.metric-wait,.connection-status small) { color:#607451; }
+.reference-theme :is(.workbench-heading p,.workbench-breadcrumb,.side-metric>span,.wb-control-note,.wb-related) { color:#607451; }
+.reference-theme :is(.side-metric strong,.metric-tile strong,.yield-main-card strong) { color:#779763; }
+.reference-theme :is(.wb-panel h2,.wb-panel-heading h2,.dashboard-section-heading h2) { color:#285b36; }
+.reference-theme :is(.wb-result-note>strong,.wb-result-note>p,.history-empty p,.history-empty h3,.advice-intro,.period-caption,.readiness-row p,.readiness-note p) { color:#607451; }
+.reference-theme .chart-scaffold i { border-color:#d7e5cb; }
+.reference-theme .empty-ring { border-color:#deebd4;outline-color:#c3d9b2; }
+.reference-theme .wb-button { border-color:#c5dab7; }
+.reference-theme .wb-button:disabled { opacity:.8; }
+.reference-theme .wb-button.primary { background:#d6e8c9;color:#6f8c5e; }
+.reference-theme .workbench-status { background:#e4efda;color:#647d4d; }
+.reference-theme .workbench-status.developing { background:#f0ebd5;color:#8c7639; }
+.reference-theme .agtech-footer { color:#738768;border-color:#cddbca; }
+.agtech-main>:is(.field-dashboard,.p2-workspace,.archive-page) { animation:glass-page-enter .26s ease-out; }
+@supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))) {
+  :root { --glass-panel:rgba(255,255,255,.72);--glass-header:rgba(255,255,255,.63);--glass-nav:rgba(19,69,45,.9); }
+  .reference-theme .agtech-header { backdrop-filter:blur(18px) saturate(125%);-webkit-backdrop-filter:blur(18px) saturate(125%); }
+  .reference-theme .pill-navigation { backdrop-filter:blur(14px) saturate(120%);-webkit-backdrop-filter:blur(14px) saturate(120%); }
+  .reference-theme :is(.insight-card,.analysis-history,.wb-panel,.panel,.capability,.archive-showcase,.model-reserve) { backdrop-filter:blur(10px) saturate(112%);-webkit-backdrop-filter:blur(10px) saturate(112%); }
+  .reference-theme .search-results,.reference-theme .account-popover { background:rgba(251,255,247,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px); }
+}
+/* 不支持滤镜时不使用依赖模糊的透明导航和内容背景。 */
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))) {
+  .reference-theme .agtech-header { background:#f4faf1; }
+  .reference-theme .pill-navigation { background:#174b34; }
+  .reference-theme :is(.insight-card,.analysis-history,.wb-panel,.panel,.capability,.archive-showcase,.model-reserve) { background:#fcfef9; }
+}
+@keyframes glass-light-drift { from{transform:translate3d(-2%,0,0)} to{transform:translate3d(6%,6%,0)} }
+@keyframes glass-page-enter { from{opacity:.55} to{opacity:1} }
+@media(max-width:1150px) {
+  .reference-theme .agtech-header { gap:13px; }
+}
+@media(max-width:760px) {
+  .reference-theme .agtech-header { margin:12px -5px 15px;padding:12px 8px!important;border-radius:18px; }
+  .reference-theme .pill-navigation { border-radius:20px;padding:5px; }
+  .reference-theme :is(.insight-card,.analysis-history,.wb-panel,.panel,.capability,.model-reserve) { --glass-panel:#f8fcf7;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px); }
+  body::after { animation:none; }
+}
+@media(prefers-reduced-motion:reduce) {
+  body::before,body::after { animation:none; }
+  .agtech-main>:is(.field-dashboard,.p2-workspace,.archive-page) { animation:none; }
+  .reference-theme :is(.photo-tool,.brand-entry):hover { transform:none; }
+}
+
+
+@media(max-width:760px) {
+  @supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))) {
+    .reference-theme :is(.insight-card,.analysis-history,.wb-panel,.panel,.capability,.model-reserve) { --glass-panel:rgba(255,255,255,.88); }
+  }
+}
+

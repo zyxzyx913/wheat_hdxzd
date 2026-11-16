@@ -1,0 +1,48 @@
+/* 麦田观察工作台：参考布局与品牌动效，不表示传感器实时数据。 */
+:root { background: #f3f5ed; color: #183f2d; --green: #23804f; --dark: #174b34; }
+body { background: #e4efe7; }
+.agtech-shell.reference-theme { background: #f3f5f1; border: 1px solid #d6e1d6; border-radius: 30px; box-shadow: 0 16px 65px #183f320a; }
+.reference-theme .agtech-header { border: 0; }
+.reference-theme .agtech-brand { border-radius: 40px; background: white; }
+.reference-theme .agtech-logo { background: #4ba768; color: white; border: none; }
+.reference-theme .agtech-brand strong { font-family: "Microsoft YaHei",sans-serif; font-weight: 500; }
+.reference-theme .page-search { background: #fff; border-radius: 40px; }
+.reference-theme .pill-navigation a { border: none; border-radius: 30px; box-shadow: none; }
+.reference-theme .pill-navigation a.selected { background: #d8e9ce; color: #355932; }
+.reference-theme .insight-card { background: white; border-radius: 27px; border: none; box-shadow: 0 3px 14px #23432d03; }
+.reference-theme .model-reserve { background: #fff; border: none; border-radius: 25px; }
+.reference-theme .model-reserve-stage h2 { font-family: inherit; font-size: 18px; }
+.reference-theme .field-observation.animated-field { min-height: 650px; border: none; border-radius: 28px; background: #214e34; padding: 0; box-shadow: 0 8px 30px #1c40290c; }
+.animated-field .observation-photo { z-index:-3; object-position: 78% center; transform-origin: 73% 90%; animation: wheat-breeze 13s ease-in-out infinite alternate; will-change: transform; }
+.animated-field .observation-shade { background: linear-gradient(180deg,#133c30ba 0%,#1d4a3322 48%,#102e22c9 100%); }
+.field-eyebrow { display: flex; gap: 7px; align-items: center; }
+.field-grain { position:absolute; inset: 0; z-index:-1; background:radial-gradient(ellipse at 15% 22%,#e1eaa01a,transparent 60%); pointer-events:none; }
+.animated-field .observation-heading { padding: 32px 30px 0; }
+.animated-field .observation-heading h1 { font-size: clamp(29px,2.6vw,45px); font-weight:500; }
+.animated-field .observation-heading p { max-width:400px; color:#e3ebda; }
+.animated-field .preview-pill { background:#eaf1dce6; border:1px solid #fcfff866; }
+.animated-field .observation-tags { position:relative; z-index:2; }
+.animated-field .field-focus { left:48%; top:45%; width:195px; height:195px; }
+.animated-field .focus-ring { border-color:#f3f7dba8; animation:focus-breathe 4s ease-in-out infinite; }
+.focus-inner-ring { position:absolute; inset:14px; border:1px solid #f4f8df33; border-radius:50%; }
+.field-scan-beam { position:absolute; left:-30px; right:-30px; height:28px; top:0; background:linear-gradient(0deg,transparent,#edffc533,transparent); border-bottom:1px solid #efffc980; filter:drop-shadow(0 0 6px #e4ffc877); animation:field-scan 6s ease-in-out infinite; }
+.animated-field .field-label { animation:label-drift 7s ease-in-out infinite alternate; }
+.animated-field .label-one { top:48%; right:4%; animation-delay:-3s; }
+.animated-field .label-two { bottom:26%; left:6%; }
+.animated-field .focus-caption { color:#f4f8df; font-size:9px; }
+.field-motion-toggle { position:absolute; bottom:31px; right:25px; z-index:4; display:flex; align-items:center; gap:6px; border-radius:30px; padding:9px 12px; background:#163b2c66; backdrop-filter:blur(8px); border:1px solid #e1ebcf55; color:#edf4dc; font-size:9px; }
+.field-motion-toggle:hover { background:#254d36c4; }
+.field-motion-toggle:active { transform:translateY(1px); }
+.animated-field .observation-bottom { right:130px; }
+.motion-paused .moving-wheat,.motion-paused .focus-ring,.motion-paused .field-scan-beam,.motion-paused .field-label { animation-play-state:paused!important; }
+@keyframes wheat-breeze { 0%{transform:scale(1.05) translate(-.6%,.3%) rotate(-.6deg)} 45%{transform:scale(1.08) translate(.4%,-.5%) rotate(.3deg)} 100%{transform:scale(1.055) translate(.9%,.3%) rotate(.7deg)} }
+@keyframes focus-breathe { 0%,100%{transform:scale(.97);opacity:.55} 50%{transform:scale(1.04);opacity:1} }
+@keyframes field-scan { 0%,100%{transform:translateY(0);opacity:0} 12%{opacity:.8} 85%{opacity:.8} 92%{transform:translateY(185px);opacity:0} }
+@keyframes label-drift { from{transform:translateY(-4px)} to{transform:translateY(5px)} }
+@media(min-width:1700px) { .reference-theme .field-observation.animated-field{min-height:765px}.animated-field .observation-heading{padding:38px 38px 0}.animated-field .field-focus{width:240px;height:240px}.animated-field .observation-bottom{left:38px;bottom:35px}.field-motion-toggle{bottom:37px} }
+@media(max-width:1450px) { .reference-theme .field-observation.animated-field{min-height:630px}.animated-field .field-focus{width:175px;height:175px;left:43%;top:47%}.animated-field .observation-heading{padding:27px 25px 0}.animated-field .observation-heading h1{font-size:31px}.animated-field .field-label{font-size:9px}.animated-field .label-one{right:3%;top:48%} }
+@media(max-width:1100px) { .reference-theme .field-observation.animated-field{min-height:650px}.animated-field .preview-pill{position:static}.animated-field .observation-heading{flex-wrap:wrap}.animated-field .observation-heading h1{font-size:29px}.animated-field .field-focus{left:39%;width:160px;height:160px}.animated-field .label-one{top:60%}.animated-field .observation-bottom{right:22px;bottom:56px}.field-motion-toggle{bottom:16px;right:21px}.animated-field .label-two{bottom:31%;left:5%} }
+@media(max-width:850px) { .reference-theme .field-observation.animated-field{min-height:620px}.animated-field .observation-heading{flex-wrap:nowrap}.animated-field .label-one{top:50%}.animated-field .field-focus{left:48%;top:42%} }
+@media(max-width:550px) { .reference-theme .field-observation.animated-field{min-height:630px;border-radius:24px}.animated-field .observation-heading{padding:25px 21px 0;flex-wrap:wrap}.animated-field .observation-heading h1{font-size:27px}.animated-field .preview-pill{position:absolute;right:16px;top:18px;bottom:auto;font-size:8px}.animated-field .field-focus{left:36%;top:46%;width:148px;height:148px}.animated-field .label-one{right:4%;top:57%;font-size:8px}.animated-field .label-two{bottom:31%;font-size:8px}.animated-field .observation-bottom{left:20px;bottom:65px}.animated-field .observation-bottom>p{font-size:7px}.animated-field .field-motion-toggle{font-size:8px}.animated-field .observation-photo{object-position:78% center} }
+@media(prefers-reduced-motion:reduce) { .animated-field .moving-wheat,.animated-field .focus-ring,.animated-field .field-scan-beam,.animated-field .field-label { animation:none!important; will-change:auto; }.animated-field .field-scan-beam{opacity:.15;top:50%} }
+

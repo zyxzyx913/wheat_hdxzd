@@ -1,0 +1,69 @@
+/* 农业场景面板：装饰图片 -> 独立虚化图层 -> 暗色遮罩 -> 清晰玻璃内容。 */
+.dark-cockpit { --scene-image:url('../assets/agriculture-atmosphere.png');--scene-position:0% 0%;--scene-size:200% 200%; }
+.dark-cockpit :is(.wb-panel,.insight-card,.analysis-history,.model-reserve,.cockpit-shortcuts>a,.panel,.archive-showcase,.capability) {
+  position:relative;isolation:isolate;
+  background:rgba(7,27,20,.16);backdrop-filter:none;-webkit-backdrop-filter:none;
+}
+.dark-cockpit :is(.wb-panel,.insight-card,.analysis-history,.model-reserve,.cockpit-shortcuts>a,.panel,.archive-showcase,.capability)::before {
+  content:"";position:absolute;inset:0;z-index:-2;pointer-events:none;border-radius:inherit;
+  background-image:var(--scene-image);background-size:var(--scene-size);background-position:var(--scene-position);background-repeat:no-repeat;
+  filter:blur(2px) brightness(.86) saturate(.72);
+}
+.dark-cockpit :is(.wb-panel,.insight-card,.analysis-history,.model-reserve,.cockpit-shortcuts>a,.panel,.archive-showcase,.capability)::after {
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border-radius:inherit;
+  background:linear-gradient(115deg,rgba(5,27,18,.65),rgba(6,30,20,.42) 65%,rgba(8,29,20,.56));
+  box-shadow:inset 0 1px 0 #c9edb711;
+}
+/* 首页每个信息分区独立选景，主麦田图片和动效不变。 */
+.dark-cockpit .cockpit-shortcuts>a:nth-child(1) { --scene-position:100% 0%; }
+.dark-cockpit .cockpit-shortcuts>a:nth-child(2) { --scene-position:0% 0%; }
+.dark-cockpit .cockpit-shortcuts>a:nth-child(3) { --scene-position:0% 0%; }
+.dark-cockpit .cockpit-shortcuts>a:nth-child(4) { --scene-position:0% 100%; }
+.dark-cockpit .growth-observations { --scene-position:0% 0%; }
+.dark-cockpit .observation-advice { --scene-position:100% 0%; }
+.dark-cockpit .function-readiness { --scene-position:0% 100%; }
+.dark-cockpit .cockpit-market { --scene-position:100% 100%; }
+.dark-cockpit .cockpit-stage { --scene-position:100% 0%; }
+.dark-cockpit .analysis-history { --scene-position:0% 0%; }
+.dark-cockpit .model-reserve { --scene-position:100% 0%; }
+/* 功能入口分别使用近景、农田、成熟麦田和麦粒，不改变点击区域。 */
+.dark-cockpit .photo-tool .photo-scene { background-image:url('../assets/agriculture-atmosphere.png')!important;filter:brightness(.8) saturate(.72); }
+.dark-cockpit .photo-tool-1 .photo-scene { background-position:0% 0%; }
+.dark-cockpit .photo-tool-2 .photo-scene { background-position:100% 0%; }
+.dark-cockpit .photo-tool-3 .photo-scene { background-position:0% 100%; }
+.dark-cockpit .photo-tool-4 .photo-scene { background-position:100% 100%; }
+.dark-cockpit .photo-tool-name { background:#09291bbd;backdrop-filter:blur(7px);color:#eef7e7;border-color:#c9e6b94f; }
+/* 六个页面按业务选景，再给操作和状态卡片配置不同景别。 */
+.dark-cockpit .p2-workspace[data-scene="image-recognition"] { --scene-position:100% 0%; }
+.dark-cockpit .p2-workspace[data-scene="growth-analysis"] { --scene-position:0% 0%; }
+.dark-cockpit .p2-workspace[data-scene="growth-prediction"] { --scene-position:0% 0%; }
+.dark-cockpit .p2-workspace[data-scene="yield-prediction"] { --scene-position:0% 100%; }
+.dark-cockpit .p2-workspace[data-scene="market-returns"] { --scene-position:100% 100%; }
+.dark-cockpit .p2-workspace[data-scene="reports"] { --scene-position:0% 0%; }
+.dark-cockpit .workbench-control { --scene-position:100% 0%; }
+.dark-cockpit .workbench-state>.wb-panel:nth-child(2) { --scene-position:0% 0%; }
+.dark-cockpit .wb-result-note { --scene-position:100% 0%; }
+/* 内容底层适度透出图片；人工原图与预测结果区域保持无装饰的空槽。 */
+.dark-cockpit .wb-panel-heading,.dark-cockpit .insight-card>.dashboard-section-heading {
+  padding:10px 12px;margin:-5px -5px 17px;border:1px solid #b8dbad17;border-radius:8px;
+  background:rgba(10,34,23,.32);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);
+}
+.dark-cockpit .visual-empty { background:rgba(6,27,18,.35);border:1px solid #9ccf841c; }
+.dark-cockpit .image-comparison .visual-empty.image { background:rgba(7,27,21,.94);border-color:#abc69b36; }
+.dark-cockpit .image-comparison { padding:10px;border-radius:10px;background:rgba(6,27,20,.3); }
+.dark-cockpit .side-metric { padding-left:10px;padding-right:10px;background:rgba(5,28,19,.22); }
+.dark-cockpit .observation-chart-empty :is(h3,p) { background:rgba(8,31,20,.48);color:#d1e0c8; }
+.dark-cockpit .chart-empty-icon { box-shadow:0 0 0 10px #0b291b59;background:#163c26bd; }
+.dark-cockpit .period-tabs { padding:7px;border:1px solid #b9d7a91c;border-radius:25px;background:#07201755; }
+.dark-cockpit :is(.wb-panel,.insight-card,.analysis-history) :is(h2,h3) { color:#ecf5e6; }
+.dark-cockpit :is(.visual-empty small,.history-empty p,.readiness-row p,.advice-intro,.side-metric small,.metric-wait) { color:#bed1b6; }
+.dark-cockpit .wb-button { background:rgba(21,58,33,.8); }
+@media(max-width:760px) {
+  .dark-cockpit :is(.wb-panel,.insight-card,.analysis-history,.model-reserve,.cockpit-shortcuts>a)::before { filter:blur(1px) brightness(.72) saturate(.65); }
+  .dark-cockpit .wb-panel-heading { backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(6,27,18,.65); }
+}
+@supports not (filter:blur(1px)) {
+  .dark-cockpit :is(.wb-panel,.insight-card,.analysis-history)::after { background:rgba(5,25,17,.83); }
+}
+
+

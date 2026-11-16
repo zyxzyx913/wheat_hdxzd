@@ -1,0 +1,162 @@
+{
+  "switches": [
+    {
+      "algorithm": "ExG",
+      "allCards": [
+        {
+          "name": "ExG",
+          "ratio": "28.06%",
+          "status": "已完成"
+        },
+        {
+          "name": "HSV",
+          "ratio": "27.05%",
+          "status": "已完成"
+        },
+        {
+          "name": "Otsu-ExG",
+          "ratio": "21.69%",
+          "status": "已完成"
+        },
+        {
+          "name": "ExG-HSV Fusion",
+          "ratio": "27.05%",
+          "status": "已完成"
+        }
+      ],
+      "maskSrc": "/media/950899e49d0d4c819fb6dab62e77c893/mask.png",
+      "ratio": "28.06%",
+      "time": "0.128 秒"
+    },
+    {
+      "algorithm": "HSV",
+      "allCards": [
+        {
+          "name": "ExG",
+          "ratio": "28.06%",
+          "status": "已完成"
+        },
+        {
+          "name": "HSV",
+          "ratio": "27.05%",
+          "status": "已完成"
+        },
+        {
+          "name": "Otsu-ExG",
+          "ratio": "21.69%",
+          "status": "已完成"
+        },
+        {
+          "name": "ExG-HSV Fusion",
+          "ratio": "27.05%",
+          "status": "已完成"
+        }
+      ],
+      "maskSrc": "/media/b295562bf0614bb5b907b5058d4e95f9/mask.png",
+      "ratio": "27.05%",
+      "time": "0.181 秒"
+    },
+    {
+      "algorithm": "Otsu-ExG",
+      "allCards": [
+        {
+          "name": "ExG",
+          "ratio": "28.06%",
+          "status": "已完成"
+        },
+        {
+          "name": "HSV",
+          "ratio": "27.05%",
+          "status": "已完成"
+        },
+        {
+          "name": "Otsu-ExG",
+          "ratio": "21.69%",
+          "status": "已完成"
+        },
+        {
+          "name": "ExG-HSV Fusion",
+          "ratio": "27.05%",
+          "status": "已完成"
+        }
+      ],
+      "maskSrc": "/media/a1a84d5d3feb4ba2b1dc306315fe4cff/mask.png",
+      "ratio": "21.69%",
+      "time": "0.121 秒"
+    },
+    {
+      "algorithm": "ExG-HSV Fusion",
+      "allCards": [
+        {
+          "name": "ExG",
+          "ratio": "28.06%",
+          "status": "已完成"
+        },
+        {
+          "name": "HSV",
+          "ratio": "27.05%",
+          "status": "已完成"
+        },
+        {
+          "name": "Otsu-ExG",
+          "ratio": "21.69%",
+          "status": "已完成"
+        },
+        {
+          "name": "ExG-HSV Fusion",
+          "ratio": "27.05%",
+          "status": "已完成"
+        }
+      ],
+      "maskSrc": "/media/d40ee50d4e1a42aca32edf2103eb71c8/mask.png",
+      "ratio": "27.05%",
+      "time": "0.219 秒"
+    }
+  ],
+  "final": {
+    "alerts": [],
+    "cards": [
+      {
+        "algorithm": "ExG",
+        "image": "/media/950899e49d0d4c819fb6dab62e77c893/mask.png",
+        "loaded": true,
+        "ratio": "28.06%",
+        "readings": "植被占比28.06%植被像素34,376分析耗时0.128 秒",
+        "status": "已完成"
+      },
+      {
+        "algorithm": "HSV",
+        "image": "/media/b295562bf0614bb5b907b5058d4e95f9/mask.png",
+        "loaded": true,
+        "ratio": "27.05%",
+        "readings": "植被占比27.05%植被像素33,140分析耗时0.181 秒",
+        "status": "已完成"
+      },
+      {
+        "algorithm": "Otsu-ExG",
+        "image": "/media/343b89ee045040deb6d55a58bf7ff532/mask.png",
+        "loaded": true,
+        "ratio": "21.69%",
+        "readings": "植被占比21.69%植被像素26,576分析耗时0.122 秒",
+        "status": "已完成"
+      },
+      {
+        "algorithm": "ExG-HSV Fusion",
+        "image": "/media/d40ee50d4e1a42aca32edf2103eb71c8/mask.png",
+        "loaded": true,
+        "ratio": "27.05%",
+        "readings": "植被占比27.05%植被像素33,140分析耗时0.219 秒",
+        "status": "已完成"
+      }
+    ],
+    "horizontalOverflow": false,
+    "selectedAlgorithm": "Otsu-ExG",
+    "url": "http://127.0.0.1:5173/#/image-recognition",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  "single_algorithm_rerun_preserved_others": true,
+  "scope": "同一真实 EWS train 图片的网页联调，非精度实验"
+}

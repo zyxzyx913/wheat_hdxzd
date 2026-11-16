@@ -1,0 +1,146 @@
+/* 小麦植物档案主题。只负责展示，不改变数据或分析逻辑。 */
+:root{--forest:#286447;--wheat:#789b3d;--gold:#D4B04C;--cream:#F7F3E7;--brown:#6C5A46;--green:#286e49;--dark:#24533b;background:#f1f0e4;color:#3c5144}
+body{background:#f1f0e4}
+.agtech-shell.botanical-theme{background:#F4EEDF;border:1px solid #d9d4bf;border-radius:10px;max-width:1760px;box-shadow:0 10px 45px #5e58300a}
+.botanical-theme{font-size:13px;background-image:repeating-linear-gradient(0deg,#8d784a02 0,#8d784a02 1px,transparent 1px,transparent 4px)}
+.botanical-theme .agtech-header{border-bottom:1px solid #cec5a955;padding-bottom:22px}
+.botanical-theme .agtech-brand{background:none;border-radius:0;padding-left:0;min-width:224px}
+.botanical-theme .agtech-logo{border:1px solid #b6a15e;border-radius:50% 50% 4px 4px;background:#2F5D50;color:#e0c777}
+.botanical-theme .agtech-brand strong{font-family:"Noto Serif SC","Songti SC","SimSun",serif;font-size:28px;letter-spacing:4px;color:#2F5D50;font-weight:600}
+.botanical-theme .agtech-brand small{font-size:9px;color:#88785e;letter-spacing:1px}
+.botanical-theme .page-search{background:#fcf9f0;border:1px solid #dfd6bf;border-radius:5px;height:49px}
+.botanical-theme .page-search input{color:#6c5a46}
+.botanical-theme .page-search input::placeholder{color:#9d957c}
+.botanical-theme .page-search:focus-within{box-shadow:0 0 0 2px #d4b04c33}
+.botanical-theme .search-results,.botanical-theme .account-popover{background:#fffcf4;border-color:#d6ccb2;border-radius:6px}
+.botanical-theme .account-avatar{background:#e6e8d5;border-color:#fdf9ed;color:#6f8a57}
+.botanical-theme .account-name strong{color:#2f5d50}
+.botanical-theme .account-name small,.botanical-theme .agtech-runtime{color:#8a8067}
+.botanical-theme .navigation-bar{padding-top:17px;padding-bottom:22px}
+.botanical-theme .pill-navigation{gap:8px}
+.botanical-theme .pill-navigation a{border-radius:3px;color:#7e765e;padding:10px 16px;font-size:12px}
+.botanical-theme .pill-navigation a.selected{background:#2f5d50;color:#faf3db;box-shadow:inset 0 -2px #d4b04c}
+.botanical-theme .pill-navigation a:hover{background:#e4e5d1;color:#2f5d50}
+.botanical-theme .pill-navigation a.selected:hover{background:#386858;color:#fff5d9}
+.botanical-theme .workspace-caption{color:#9c895d;letter-spacing:2px;font-size:10px}
+.botanical-theme .agtech-footer{border-color:#d9d0b7;color:#94866c;font-size:10px}
+.botanical-theme .field-observation.botanical-hero{background:#ede9d7;color:#2f5d50;border:1px solid #d9d0b5;min-height:600px;border-radius:5px;padding:39px 32px 59px;overflow:hidden}
+.botanical-hero-copy{position:relative;width:55%;z-index:2}
+.botanical-kicker{font-size:10px;color:#978055;letter-spacing:1px}
+.botanical-hero h1{font-family:"Noto Serif SC","Songti SC","SimSun",serif;font-size:65px;letter-spacing:8px;font-weight:400;margin-top:27px;color:#2f5d50;line-height:1.3}
+.botanical-hero h1>span{display:block;letter-spacing:2px;font-size:13px;font-family:"Microsoft YaHei",sans-serif;color:#6c7657;margin-top:15px}
+.botanical-rule{width:37px;height:2px;background:#b49b50;margin:27px 0}
+.botanical-hero h2{font-family:"Noto Serif SC","Songti SC","SimSun",serif;font-weight:400;font-size:30px;line-height:1.8;color:#47654a;letter-spacing:1px}
+.botanical-hero-copy>p{font-size:12px;line-height:2.2;color:#8b7e62;max-width:290px;margin-top:17px;margin-bottom:26px}
+.botanical-theme .botanical-hero .field-button{font-size:10px;border-radius:2px;padding:11px 13px;gap:7px}
+.botanical-theme .botanical-hero .field-button.primary{background:#2f5d50;color:#fff7dc;border:1px solid #2f5d50}
+.botanical-theme .botanical-hero .field-button.secondary{color:#597453;border:1px solid #a8af8b;background:#f7f2e5}
+.botanical-theme .field-button:hover{box-shadow:0 4px 10px #4c593214}
+.botanical-disclosure{display:block;font-size:8px;color:#a08f66;margin-top:15px}
+.botanical-hero-foot{position:absolute;bottom:0;left:25px;right:25px;display:flex;align-items:center;gap:7px;border-top:1px solid #b8aa7a55;padding:15px 2px;color:#a28b50;font-size:9px}
+.botanical-hero-foot>span:last-child{margin-left:auto;letter-spacing:1px}
+.wheat-plate{position:absolute;top:25px;right:7px;bottom:53px;width:47%;margin:0;color:#62784d}
+.plate-heading{position:absolute;top:8px;right:18px;color:#a08851;font-size:9px;letter-spacing:3px;writing-mode:vertical-rl}
+.wheat-plate>svg{width:100%;height:100%;padding:19px 0 26px}
+.wheat-plate figcaption{position:absolute;bottom:6px;left:0;right:0;text-align:center;font-size:10px;color:#9c8756;letter-spacing:2px}
+.wheat-plate figcaption small{display:block;font-size:7px;letter-spacing:1px;color:#a59b7f;margin-top:7px}
+.botanical-theme .insight-card,.botanical-theme .analysis-history{border-radius:5px;background:#fcf9f0;border:1px solid #dfd7c1;padding:24px}
+.botanical-theme .dashboard-section-heading h2,.botanical-theme .section-heading h2{font-family:"Noto Serif SC","Songti SC","SimSun",serif;font-size:19px;color:#2f5d50;font-weight:400}
+.botanical-theme .dashboard-section-heading>span,.botanical-theme .subtle-label{color:#a28c59}
+.botanical-theme .insight-icon,.botanical-theme .chart-empty-icon{background:#eee9d4;color:#a48d4e}
+.botanical-theme .observation-chart-empty h3,.botanical-theme .observation-chart-empty p{background:#fcf9f0;color:#8b876c}
+.botanical-theme .empty-grid span{border-color:#d8ceb055}
+.botanical-theme .period-caption{color:#a49572}
+.botanical-theme .period-tabs button{border-radius:3px;background:#eee9d8;color:#8a8267}
+.botanical-theme .period-tabs button.active{background:#2f5d50;color:#f5e4ab}
+.botanical-theme .advice-pill{border-radius:3px;color:#5a6a48;font-size:11px}
+.botanical-theme .advice-pill.pale{background:#ede8d4}
+.botanical-theme .advice-pill.sage{background:#e1e4cb}
+.botanical-theme .advice-pill.green{background:#dcd299;color:#6b603b}
+.botanical-theme .advice-intro,.botanical-theme .advice-footnote{color:#a29270}
+.botanical-theme .readiness-label{border-radius:2px}
+.botanical-theme .readiness-label.complete{background:#e1e7d6;color:#53744d}
+.botanical-theme .readiness-label.developing{background:#f0e3b8;color:#9b7d2e}
+.botanical-theme .readiness-label.pending{background:#ebe6d7;color:#978b70}
+.botanical-theme .readiness-row h3{color:#647350}
+.botanical-theme .readiness-row p{color:#a09475}
+.botanical-theme .readiness-row+.readiness-row{border-color:#e3dbc655}
+.botanical-theme .readiness-note{background:#f0ebdb;border-radius:3px;color:#a28e54}
+.botanical-theme .readiness-note p{color:#9a8c68}
+.botanical-theme .photo-tool{border-radius:55px 55px 3px 3px;border:1px solid #c8c5aa}
+.botanical-theme .photo-tool-state{background:#f0e2b9e6;color:#8c7334;font-size:8px}
+.botanical-theme .photo-tool-name{border-radius:2px;background:#234a3bbc;font-size:10px}
+.botanical-theme .history-empty-icon{background:#ede8d4;border-radius:3px;color:#a79053}
+.botanical-theme .history-action{background:#2f5d50;color:#f3e8c9;border-radius:3px}
+.botanical-theme .history-empty h3{color:#6c7153}
+.botanical-theme .history-empty p,.botanical-theme .dashboard-section-heading p{color:#a09479}
+.botanical-theme .dashboard-research{color:#9a875d}
+.botanical-theme .dashboard-research a{color:#8d7f60}
+.model-reserve{background:#f9f5e9;border:1px solid #d9cfb1;border-radius:5px;overflow:hidden;margin-bottom:22px}
+.dashboard-insights>.model-reserve{margin-bottom:0}
+.model-reserve-heading{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:17px 20px;border-bottom:1px solid #e3dac2}
+.model-reserve-heading>span:first-child{display:flex;align-items:center;gap:7px;color:#78805a;font-size:11px}
+.archive-status{font-size:9px;white-space:nowrap;color:#9b7e32;background:#efe3bc;padding:5px 8px;border-radius:2px}
+.model-reserve-stage{position:relative;isolation:isolate;overflow:hidden;text-align:center;padding:29px 15px 27px;min-height:200px}
+.model-floor{position:absolute;z-index:-1;width:220px;height:130px;left:50%;bottom:-40px;background-image:linear-gradient(#c4b78e33 1px,transparent 1px),linear-gradient(90deg,#c4b78e33 1px,transparent 1px);background-size:22px 22px;transform:translateX(-50%) perspective(170px) rotateX(52deg);opacity:.65}
+.model-box{display:block;color:#a89358;margin-bottom:10px}
+.model-reserve-stage h2{font-family:"SimSun",serif;font-weight:400;font-size:20px;color:#5b7253}
+.model-reserve-stage p{font-size:10px;color:#9c9070;line-height:1.9;margin-top:10px}
+.model-reserve-stage small{display:block;font-size:9px;color:#ac9f7f;margin-top:7px}
+.botanical-theme .archive-page .page-heading{border-bottom:1px solid #d8ceb5;padding-bottom:23px;margin-bottom:20px}
+.botanical-theme .archive-page .eyebrow{color:#a08a52;letter-spacing:2px;font-size:10px}
+.botanical-theme .archive-page h1{font-family:"Noto Serif SC","SimSun",serif;font-weight:400;font-size:34px;color:#2f5d50;letter-spacing:2px}
+.botanical-theme .archive-page .page-heading p{font-size:12px;color:#92856c}
+.botanical-theme .badge{background:#eee2b8;border-radius:2px;color:#9b7d34}
+.botanical-theme .notice{background:#e8e7d5;color:#7e8060;border-radius:3px}
+.botanical-theme .panel,.botanical-theme .capability{border-radius:4px;background:#fdfaf2;border:1px solid #e3dac3;box-shadow:none}
+.botanical-theme .capability-number{color:#b89d50}
+.botanical-theme .capability h3{color:#64724e}
+.botanical-theme .capability p{color:#96896c}
+.botanical-theme .small-status{color:#a68a45}
+.botanical-theme .tips-panel{background:#e8e7d1}
+.botanical-theme .tips-panel li{color:#878263}
+.botanical-theme .upload-placeholder{background:#f7f2e4;border-color:#ccbd93;border-radius:3px}
+.botanical-theme .empty-icon{background:#eee7d2;color:#b09a5e;border-radius:3px}
+.botanical-theme .disabled-button{background:#e6dec5;color:#a19571;border-radius:2px}
+.botanical-theme .step-number{background:#e8e7d2;color:#859061;border-radius:2px}
+.botanical-theme .archive-page .workflow{margin-top:24px}
+.archive-showcase{background:#faf6eb;border:1px solid #dcd0af;margin-bottom:28px;padding:25px}
+.archive-showcase-title{display:flex;justify-content:space-between;align-items:center;gap:20px;border-bottom:1px solid #ded3b8;padding-bottom:21px;margin-bottom:22px}
+.archive-showcase-title span{color:#b19958;font-size:10px;letter-spacing:2px}
+.archive-showcase-title h2{font-family:"Noto Serif SC","SimSun",serif;font-size:24px;line-height:1.6;font-weight:400;color:#42614b;margin-top:9px}
+.archive-showcase-title p{font-size:11px;color:#9b8d6f;line-height:1.9;margin-top:9px}
+.archive-showcase-title>svg{color:#baa363}
+.archive-comparison{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.archive-image-slot{display:flex;flex-direction:column;align-items:center;justify-content:center;background:#f0eddf;border:1px solid #ded4b9;min-height:200px;position:relative;padding:45px 15px 25px;color:#a09368}
+.archive-image-slot>span{position:absolute;top:15px;left:18px;font-size:10px;color:#8b805e}
+.archive-image-slot h3{font-weight:400;font-size:13px;color:#89906e;margin-top:15px}
+.archive-image-slot p{font-size:10px;color:#a79b7c;margin-top:9px;line-height:1.8}
+.archive-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.archive-metrics article{padding:22px;background:#e9ead8;border-top:2px solid #a3af83}
+.archive-metrics article:nth-child(2){background:#f0e6c7;border-color:#d4b04c}
+.archive-metrics article:nth-child(3){background:#eee9da;border-color:#b5a88b}
+.archive-metrics article>span{font-size:11px;color:#838369}
+.archive-metrics strong{display:block;font-family:"SimSun",serif;font-size:25px;font-weight:400;color:#667b53;letter-spacing:2px;margin-top:15px}
+.archive-metrics article:nth-child(2) strong{color:#a28c40}
+.archive-metrics p{font-size:10px;color:#a2987b;line-height:1.8;margin-top:12px}
+.archive-timeline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;padding:8px 0}
+.archive-timeline>div{border-top:1px solid #b6bb8b;padding:21px 15px 14px;position:relative}
+.archive-timeline>div::before{content:"";position:absolute;top:-4px;left:14px;width:7px;height:7px;background:#c2ad61;border:2px solid #faf6eb;border-radius:50%}
+.archive-timeline>div>span{font-size:10px;color:#b19c57}
+.archive-timeline h3{font-size:13px;font-weight:400;color:#78855f;margin-top:12px}
+.archive-timeline p{font-size:10px;color:#aa9d7d;margin-top:10px}
+.archive-timeline small{grid-column:1/-1;color:#ae9e76;font-size:10px;margin-top:17px}
+.archive-chart-empty{margin-top:19px;padding:29px;text-align:center;background:repeating-linear-gradient(0deg,transparent,transparent 39px,#c4b58918 40px);border:1px solid #e3d8bb;color:#b9a76f}
+.archive-chart-empty h3{font-weight:400;font-size:14px;color:#92936d;margin-top:10px}
+.archive-chart-empty p{font-size:11px;color:#aa9b76;line-height:1.9;margin-top:10px}
+.archive-report{display:flex;align-items:center;gap:25px;padding:23px;background:#f2eddf;color:#b09b61}
+.archive-report>div{flex:1}
+.archive-report>div>span{color:#ae985c;font-size:10px;letter-spacing:1px}
+.archive-report h3{font-family:"SimSun",serif;font-weight:400;color:#71825b;font-size:23px;margin-top:12px}
+.archive-report p{font-size:11px;color:#a29474;margin-top:10px;line-height:1.9}
+@media(min-width:1700px){.botanical-theme .field-observation.botanical-hero{min-height:705px;padding:50px 42px 64px}.botanical-hero h1{font-size:82px}.botanical-hero h2{font-size:35px}.botanical-hero-copy>p{font-size:13px;max-width:330px;margin-top:22px}.botanical-theme .botanical-hero .field-button{font-size:12px;padding:13px 16px}}
+@media(max-width:1100px){.botanical-theme .field-observation.botanical-hero{padding:29px 25px 59px;min-height:620px}.botanical-hero-copy{width:61%}.wheat-plate{width:45%;right:-7px;opacity:.8;top:80px}.botanical-hero h1{font-size:55px}.botanical-hero h2{font-size:26px}.botanical-hero-copy>p{font-size:11px}.botanical-kicker{font-size:8px}.botanical-hero h1>span{font-size:10px;letter-spacing:1px}.botanical-theme .archive-page h1{font-size:30px}}
+@media(max-width:850px){.botanical-hero-copy{width:54%}.wheat-plate{width:48%;opacity:1;top:20px}.archive-metrics{gap:10px}.archive-metrics article{padding:17px}.archive-showcase{padding:21px}}
+@media(max-width:550px){.botanical-theme .agtech-brand{min-width:0}.botanical-theme .agtech-brand strong{font-size:23px}.botanical-theme .agtech-brand small{font-size:7px;letter-spacing:0}.botanical-theme .pill-navigation a{font-size:10px;padding:9px 10px}.botanical-theme .agtech-header{padding-bottom:17px}.botanical-theme .field-observation.botanical-hero{min-height:610px;padding:28px 21px 55px}.botanical-hero-copy{width:100%}.botanical-hero h1{font-size:59px}.botanical-hero h1>span{font-size:11px}.botanical-hero h2{font-size:25px}.botanical-hero-copy>p{max-width:68%;font-size:10px;margin-top:15px;margin-bottom:28px}.botanical-rule{margin:21px 0}.wheat-plate{width:48%;top:180px;bottom:90px;right:-5px;opacity:.6}.plate-heading{font-size:7px}.wheat-plate figcaption{font-size:7px;letter-spacing:0}.wheat-plate figcaption small{font-size:6px}.botanical-hero-foot{left:17px;right:17px;font-size:8px}.botanical-hero-foot>span:last-child{font-size:7px}.botanical-theme .insight-card{padding:23px}.archive-comparison,.archive-metrics{grid-template-columns:1fr}.archive-showcase-title h2{font-size:21px}.archive-showcase{padding:18px}.archive-timeline{grid-template-columns:1fr 1fr;gap:18px 0}.archive-report{flex-wrap:wrap;padding:18px}.archive-report h3{font-size:20px}.archive-report>div{min-width:150px}.botanical-theme .archive-page h1{font-size:28px}.model-reserve-heading{padding:15px}.archive-image-slot{min-height:170px}}
+
